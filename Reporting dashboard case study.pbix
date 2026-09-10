@@ -1,28 +1,13 @@
-# 📊 E-Commerce Sales & Performance Dashboard
+## 📊 E-Commerce Sales & Performance Dashboard
 
-An interactive Power BI dashboard built to transform raw e-commerce transaction data into meaningful business insights across sales, profitability, customers, returns, and operations.
+Interactive Power BI dashboard built to transform raw E-commerce transaction data into meaningful business insights having sales, profitability, customers, returns, and operations.
 
 The project follows an end-to-end Business Intelligence workflow:
 
-**Raw Excel Data → Power Query → Data Modeling → DAX → KPI Tracking → Executive Dashboard → Business Insights**
+Raw Excel Data → Power Query → Data Modeling → DAX → KPI Tracking → Executive Dashboard → Business Insights
+### Project Overview
 
----
-
-## 🚀 Live Dashboard
-
-🔗 **Power BI Live Dashboard:**  
-[View Interactive Dashboard](YOUR_POWER_BI_LINK_HERE)
-
-🔗 **GitHub Repository:**  
-[View Project on GitHub](YOUR_GITHUB_LINK_HERE)
-
----
-
-## 🎯 Project Overview
-
-Businesses often have large amounts of transactional data but lack a centralized way to monitor performance and identify areas that require attention.
-
-This project was developed to create an interactive reporting solution that allows decision-makers to quickly understand:
+Businesses often have large amounts of transactional data but lack a centralized way to monitor performance and identify areas that require attention.This project was developed to create an interactive reporting solution that allows decision-makers to quickly understand:
 
 - Overall sales performance
 - Revenue and profitability
@@ -34,15 +19,9 @@ This project was developed to create an interactive reporting solution that allo
 - Payment method trends
 - Revenue growth over time
 
-The goal was to transform a raw transaction export into a clean, interactive, and executive-friendly Power BI reporting solution.
+### Business Problem
 
----
-
-## 💼 Business Problem
-
-The raw e-commerce dataset contains transactional information covering customers, products, revenue, discounts, regions, returns, delivery times, and profitability.
-
-Without a centralized reporting solution, it can be difficult to answer important business questions such as:
+The raw e-commerce dataset contains transactional information covering customers, products, revenue, discounts, regions, returns, delivery times, and profitability.Without a centralized reporting solution, it can be difficult to answer important business questions such as:
 
 - How much revenue is the business generating?
 - Which categories generate the most revenue?
@@ -55,48 +34,7 @@ Without a centralized reporting solution, it can be difficult to answer importan
 - Are higher discounts affecting profitability?
 - Which customer segments contribute most to sales?
 
-The dashboard addresses these questions through interactive KPIs and visual analysis.
-
----
-
-## 📂 Dataset
-
-The project uses an e-commerce transaction dataset containing approximately:
-
-- **34,500 Orders**
-- **7,900+ Customers**
-- **24,000+ Products**
-- **7 Product Categories**
-- **5 Regions**
-- **731 Days of Transaction Data**
-
-### Main Fields
-
-| Field | Description |
-|---|---|
-| `order_id` | Unique order identifier |
-| `customer_id` | Customer identifier |
-| `product_id` | Product identifier |
-| `category` | Product category |
-| `price` | Product price |
-| `discount` | Applied discount |
-| `quantity` | Quantity purchased |
-| `Revenue` | Gross revenue |
-| `total_amount` | Revenue after discount |
-| `payment_method` | Payment method |
-| `order_date` | Order date |
-| `delivery_time_days` | Delivery duration |
-| `region` | Customer/order region |
-| `returned` | Return status |
-| `shipping_cost` | Shipping cost |
-| `profit_margin` | Profit amount |
-| `customer_age` | Customer age |
-| `customer_gender` | Customer gender |
-| `profit_margin_%` | Profit margin percentage |
-
----
-
-# 🛠️ Tools & Technologies
+### Tools & Technologies
 
 - **Power BI**
 - **Power Query**
@@ -106,9 +44,7 @@ The project uses an e-commerce transaction dataset containing approximately:
 - **Business Intelligence**
 - **Data Visualization**
 
----
-
-# 🔄 Data Preparation
+###  Data Preparation
 
 The raw Excel data was imported into Power BI and prepared using Power Query.
 
@@ -124,28 +60,3 @@ The raw Excel data was imported into Power BI and prepared using Power Query.
 - Return status validation
 - Data structure preparation
 - Date table creation
-
-The transactional table was structured as the main fact table:
-
-`FactSales`
-
-A dedicated date table was also created to support time-based analysis.
-
----
-
-# 🏗️ Data Model
-
-The project uses a dimensional modeling approach to improve reporting and analytical flexibility.
-
-### Core Model
-
-```text
-                DimDate
-                   │
-                   │
-                   ▼
-               FactSales
-                   │
-        ┌──────────┼──────────┐
-        ▼          ▼          ▼
-   Customer     Product     Region
